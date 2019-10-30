@@ -44,7 +44,9 @@ function browserSyncReload(done) {
 
 // Clean vendor
 function clean() {
-  return del(["./vendor/"]);
+  return del(["./vendor/"])
+    .then(del(["./css/"]))
+    .then(del(["./dist/"]));
 }
 
 // Bring third party dependencies from node_modules into vendor directory
@@ -125,10 +127,20 @@ function watchFiles() {
   gulp.watch("./**/*.html", browserSyncReload);
 }
 
+function dist() {
+  return merge(
+    gulp.src('./css/*').pipe(gulp.dest("./dist/css")),
+    gulp.src('./vendor/**/*').pipe(gulp.dest("./dist/vendor")),
+    gulp.src('./js/*').pipe(gulp.dest("./dist/js")),
+    gulp.src('./img/*').pipe(gulp.dest("./dist/img")),
+    gulp.src('./index.html').pipe(gulp.dest("./dist")));
+}
+
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
 const build = gulp.series(vendor, gulp.parallel(css, js));
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
+const release = gulp.series(build, dist);
 
 // Export tasks
 exports.css = css;
@@ -137,4 +149,5 @@ exports.clean = clean;
 exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
+exports.release = release;
 exports.default = build;

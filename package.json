@@ -3,7 +3,10 @@
     "name": "startbootstrap-stylish-portfolio",
     "version": "5.0.7",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "node_modules/.bin/gulp watch",
+        "clean": "node_modules/.bin/gulp clean",
+        "build": "node_modules/.bin/gulp build",
+        "release": "node_modules/.bin/gulp release"
     },
     "description": "A stylish portfolio HTML template built with Bootstrap",
     "keywords": [
@@ -22,11 +25,12 @@
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "David Miller (http://davidmiller.io/)",
+        "Selcuk Cihan (http://selcukcihan.com)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio.git"
+        "url": "https://github.com/selcukcihan/startbootstrap-stylish-portfolio.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
