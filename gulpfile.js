@@ -132,7 +132,9 @@ function dist() {
     gulp.src('./css/*').pipe(gulp.dest("./dist/css")),
     gulp.src('./vendor/**/*').pipe(gulp.dest("./dist/vendor")),
     gulp.src('./js/*').pipe(gulp.dest("./dist/js")),
-    gulp.src('./img/*').pipe(gulp.dest("./dist/img")),
+    gulp.src('./img/**/*').pipe(gulp.dest("./dist/img")),
+    gulp.src('./browserconfig.xml').pipe(gulp.dest("./dist")),
+    gulp.src('./favicon.ico').pipe(gulp.dest("./dist")),
     gulp.src('./index.html').pipe(gulp.dest("./dist")));
 }
 
