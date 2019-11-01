@@ -125,8 +125,14 @@
           <a class="portfolio-item">
             <span class="caption">
               <span class="caption-content">
-                <h2>AWS altyapısı</h2>
-                <p class="mb-0">Bölgeler, erişilebilirlik alanları (AZ) ve uç konumlar (edge locations)</p>
+                <h3>AWS altyapısı</h3>
+                <p class="mb-0">
+                  <ul>
+                    <li>Bölgeler</li>
+                    <li>Erişilebilirlik alanları (AZ)</li>
+                    <li>Uç konumlar (edge locations)</li>
+                  </ul>
+                </p>
               </span>
             </span>
             <img class="img-fluid" src="img/scope-1.jpg" alt="">
@@ -136,8 +142,14 @@
           <a class="portfolio-item">
             <span class="caption">
               <span class="caption-content">
-                <h2>S3 ve CloudFront</h2>
-                <p class="mb-0">Statik web sitesi nasıl host edilir ve AWS'nin CDN çözümüyle ziyaretçilere nasıl en az gecikmeyle ulaştırılır.</p>
+                <h3>S3 ve CloudFront</h3>
+                <p class="mb-0">
+                  <ul>
+                    <li>Statik web sitesi host edin</li>
+                    <li>CloudFront ile (CDN çözümü), ziyaretçilere en az gecikmeyle ulaştırın</li>
+                    <li>Dinamik SPA uygulamalarınızı S3 ile kullanıcılarınıza sunun</li>
+                  </ul>
+                </p>
               </span>
             </span>
             <img class="img-fluid" src="img/scope-2.jpg" alt="">
@@ -147,8 +159,14 @@
           <a class="portfolio-item">
             <span class="caption">
               <span class="caption-content">
-                <h2>İşlem</h2>
-                <p class="mb-0">Sanal makinalar (EC2) ile istediğiniz uygulama nasıl gerçeklenir</p>
+                <h3>İşlem</h3>
+                <p class="mb-0">
+                  <ul>
+                    <li>Sanal makinalar (EC2) ile istediğiniz uygulamayı gerçekleyin</li>
+                    <li>Farklı erişilebilirlik alanları ve bölgelerle, uygulamanızı ve kullanıcılarınızı olası arızalardan koruyun</li>
+                    <li>Autoscaling ile, uygulamanıza olan talebe göre sanal makinalarınızı otomatik olarak ölçekleyin</li>
+                  </ul>
+                </p>
               </span>
             </span>
             <img class="img-fluid" src="img/scope-3.jpg" alt="">
@@ -158,8 +176,14 @@
           <a class="portfolio-item">
             <span class="caption">
               <span class="caption-content">
-                <h2>DynamoDB (NoSQL)</h2>
-                <p class="mb-0">NoSQL veritabanları nasıl tasarlanır ve maksimum performansı almak için ipuçları</p>
+                <h3>DynamoDB (NoSQL)</h3>
+                <p class="mb-0">
+                  <ul>
+                    <li>NoSQL veritabanları nasıl tasarlanır</li>
+                    <li>Maksimum performansı almak için ipuçları</li>
+                    <li>Veri tutarlılık (read/write consistency) türleri</li>
+                  </ul>
+                </p>
               </span>
             </span>
             <img class="img-fluid" src="img/scope-4.jpg" alt="">
@@ -169,8 +193,14 @@
           <a class="portfolio-item">
             <span class="caption">
               <span class="caption-content">
-                <h2>CloudWatch ve CloudTrail (monitoring çözümleri)</h2>
-                <p class="mb-0">Buluttaki kaynaklarınızı yakından takip edip, otomatik aksiyonlar alın</p>
+                <h3>CloudWatch ve CloudTrail (monitoring çözümleri)</h3>
+                <p class="mb-0">
+                  <ul>
+                    <li>CloudWatch ile bulut çözümünüzü denetleyin</li>
+                    <li>Bulutunuzda gerçekleşen olaylara otomatik reaksiyon verin</li>
+                    <li>CloudTrail ile audit ihtiyacınızı çözün</li>
+                  </ul>
+                </p>
               </span>
             </span>
             <img class="img-fluid" src="img/scope-5.jpg" alt="">
@@ -180,8 +210,14 @@
           <a class="portfolio-item">
             <span class="caption">
               <span class="caption-content">
-                <h2>Lambda ile serverless uygulamalar</h2>
-                <p class="mb-0">Bulutun tüm avantajlarını ve fırsatlarını kullanabilmek için, sunucusuz uygulamalar geliştirin - ölçeklemeyi AWS halletsin</p>
+                <h3>Lambda ile serverless uygulamalar</h3>
+                <p class="mb-0">
+                  <ul>
+                    <li>Bulutun tüm avantajlarını ve fırsatlarını kullanabilmek için, sunucusuz uygulamalar geliştirin</li>
+                    <li>Lambda ile, ölçeklemeyi AWS'ye bırakın. Anlık ihtiyacınıza göre kapasiteniz otomatik olarak genişlesin veya daralsın</li>
+                    <li>Tamamen sunucusuz bir web uygulamasının uçtan uca güvenliğini sağlayın</li>
+                  </ul>
+                </p>
               </span>
             </span>
             <img class="img-fluid" src="img/scope-6.jpg" alt="">
@@ -241,6 +277,10 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <input name="email" class="form-control" id="email" type="email" placeholder="E-posta adresiniz *" required>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input name="company" class="form-control" id="company" type="text" placeholder="Firma adı *" required>
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
